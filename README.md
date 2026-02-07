@@ -7,6 +7,12 @@
 ## 📋 Executive Summary
 Architected by **Adewole Felix Bamidele**, this system automates the patient intake process by acting as a "Digital Triage Nurse." It uses conditional logic to analyze patient symptoms in real-time and route them to the correct medical department, reducing wait times for critical cases.
 
+## 🛠️ Technical Know-How
+1. Conditional Logic (If-This-Then-That)
+Implemented complex Switch Nodes in n8n that parse keywords like "chest pain," "bleeding," or "unconscious" to trigger immediate high-priority alerts.
+
+2. Privacy & Compliance
+
 ## 🧠 Triage Logic Architecture
 
 ```mermaid
@@ -22,11 +28,7 @@ graph TD
     F -->|Action| I[Send Calendar Booking Link]
 
 
-    🛠️ Technical Know-How
-1. Conditional Logic (If-This-Then-That)
-Implemented complex Switch Nodes in n8n that parse keywords like "chest pain," "bleeding," or "unconscious" to trigger immediate high-priority alerts.
-
-2. Privacy & Compliance
+    
 Designed with data minimization in mind. The system strips PII (Personally Identifiable Information) before sending analytics to the dashboard, ensuring patient confidentiality is maintained.
 
 3. Real-Time Alerting
