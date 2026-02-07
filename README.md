@@ -16,6 +16,7 @@ Designed with data minimization in mind. The system strips PII (Personally Ident
 
 3. Real-Time Alerting
 Connected to Twilio API to deliver SMS alerts to doctors within 3 seconds of a high-risk submission.
+## Architected by: Adewole Felix Bamidele Solutions Architect & Automation Engineer
 
 ## 🧠 Triage Logic Architecture
 
@@ -35,4 +36,4 @@ graph TD
     
 
 
-Architected by: Adewole Felix Bamidele Solutions Architect & Automation Engineer
+
