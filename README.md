@@ -21,15 +21,15 @@ Connected to Twilio API to deliver SMS alerts to doctors within 3 seconds of a h
 
 ```mermaid
 graph TD
-    A[Patient Form Input] -->|Webhook| B(n8n Triage Engine)
-    B -->|Analyze Symptoms| C{Severity Check}
-    C -->|High Fever + Chest Pain| D[🚨 EMERGENCY ROUTE]
-    C -->|Moderate Symptoms| E[⚠️ Urgent Care Route]
-    C -->|Checkup/Refill| F[General Practice Route]
+    A["Patient Form Input"] -->|Webhook| B("n8n Triage Engine")
+    B -->|"Analyze Symptoms"| C{"Severity Check"}
+    C -->|"High Fever + Chest Pain"| D["🚨 EMERGENCY ROUTE"]
+    C -->|"Moderate Symptoms"| E["⚠️ Urgent Care Route"]
+    C -->|"Checkup/Refill"| F["General Practice Route"]
     
-    D -->|Action| G[SMS Alert to On-Call Doctor]
-    E -->|Action| H[Schedule Next Available Slot]
-    F -->|Action| I[Send Calendar Booking Link]
+    D -->|"Action"| G["SMS Alert to On-Call Doctor"]
+    E -->|"Action"| H["Schedule Next Available Slot"]
+    F -->|"Action"| I["Send Calendar Booking Link"]
 
 
     
