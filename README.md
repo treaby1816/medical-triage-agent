@@ -12,6 +12,10 @@ Architected by **Adewole Felix Bamidele**, this system automates the patient int
 Implemented complex Switch Nodes in n8n that parse keywords like "chest pain," "bleeding," or "unconscious" to trigger immediate high-priority alerts.
 
 2. Privacy & Compliance
+Designed with data minimization in mind. The system strips PII (Personally Identifiable Information) before sending analytics to the dashboard, ensuring patient confidentiality is maintained.
+
+3. Real-Time Alerting
+Connected to Twilio API to deliver SMS alerts to doctors within 3 seconds of a high-risk submission.
 
 ## 🧠 Triage Logic Architecture
 
@@ -29,9 +33,6 @@ graph TD
 
 
     
-Designed with data minimization in mind. The system strips PII (Personally Identifiable Information) before sending analytics to the dashboard, ensuring patient confidentiality is maintained.
 
-3. Real-Time Alerting
-Connected to Twilio API to deliver SMS alerts to doctors within 3 seconds of a high-risk submission.
 
 Architected by: Adewole Felix Bamidele Solutions Architect & Automation Engineer
